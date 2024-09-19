@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button id="prev-month">‹</button>
+        <select id="month-select"></select>
+        <select id="year-select"></select>
+        <button id="next-month">›</button>
+      </div>
+      <div class="calendar-body">
+        <div class="calendar-days">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="calendar-dates" id="calendar-dates"></div>
+      </div>
+    </div>
+
+    <div class="todo-container">
+      <h3>To-Do List for <span id="selected-date">-</span></h3>
+      <input type="text" id="search-input" placeholder="Search tasks..." />
+      <select id="filter-priority">
+        <option value="all">All Priorities</option>
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <ul id="todo-list"></ul>
+      <input type="text" id="todo-input" placeholder="Add new task..." />
+      <select id="priority-select">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <button id="add-todo">Add Task</button>
+      <input type="file" id="file-input" accept=".txt" />
+      <button id="import-tasks">Import Tasks</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

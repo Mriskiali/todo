@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f9;
+}
+
+button {
+  cursor: pointer;
+}
+
+.calendar-container,
+.todo-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-days,
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-dates div {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.calendar-dates div:hover {
+  background-color: #eee;
+}
+
+.few-todos {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.medium-todos {
+  background-color: #ffc107; /* Yellow */
+  color: black;
+}
+
+.many-todos {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.todo-container input,
+.todo-container select {
+  margin: 5px 0;
+}
+
+.todo-low {
+  color: #4caf50; /* Green */
+}
+
+.todo-medium {
+  color: #ffc107; /* Yellow */
+}
+
+.todo-high {
+  color: #f44336; /* Red */
+}
+
+.todo-done {
+  text-decoration: line-through;
+  color: #888;
+}
